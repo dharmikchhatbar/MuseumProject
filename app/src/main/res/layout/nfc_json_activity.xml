@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NFCJsonActivity">
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editID"
+        android:layout_marginTop="16dp"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/editBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Body" />
+
+    <EditText
+        android:id="@+id/editURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editBody"
+        android:layout_marginTop="16dp"
+        android:hint="URL" />
+
+    <EditText
+        android:id="@+id/editImageLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editURL"
+        android:layout_marginTop="16dp"
+        android:hint="Image Link" />
+
+    <EditText
+        android:id="@+id/editVideoLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editImageLink"
+        android:layout_marginTop="16dp"
+        android:hint="Video Link" />
+
+    <Button
+        android:id="@+id/writeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editVideoLink"
+        android:layout_marginTop="24dp"
+        android:text="Write to NFC Tag" />
+
+    <Button
+        android:id="@+id/addFieldButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/writeButton"
+        android:layout_marginTop="24dp"
+        android:text="Add Field" />
+
+    <LinearLayout
+        android:id="@+id/extraFieldsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addFieldButton"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
