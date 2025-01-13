@@ -25,9 +25,13 @@ The app is designed to:
 
 ├── /src
 │   ├── NFC/
+
 │   ├── BLE/
+
 │   ├── QRCode/
+
 │   └── Zigbee/
+
 └── README.md
 
 📱 How to Use
